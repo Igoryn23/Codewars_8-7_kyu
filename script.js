@@ -82,4 +82,21 @@ function toTime(seconds) {
     return `${hours} hour(s) and ${min} minute(s)`;
 
 }
-toTime(3663);
+// toTime(3663);
+
+// Every possible sum of two digits
+
+function digits(num) {
+    let arr = [];
+    let str = num.toString();
+    console.log(str);
+    for (let i = 0; i < str.length; i++) {
+        for (let k = i + 1; k < str.length; k++) {
+            arr.push(+str[i] + +str[k]);
+        }
+    }
+    console.log(arr);
+    return arr;
+}
+
+digits(123);
