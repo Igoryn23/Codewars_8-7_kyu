@@ -99,4 +99,19 @@ function digits(num) {
     return arr;
 }
 
-digits(123);
+// digits(123);
+
+// Difference Of Squares  
+function diffOfSquares(n) {
+    let sum = 0;
+    let sq = 0;
+    while (n) {
+        sum += n;
+        sq += n ** 2;
+        n--;
+    }
+    console.log(sum, sq);
+    return sum ** 2 - sq;
+
+}
+diffOfSquares(10);
