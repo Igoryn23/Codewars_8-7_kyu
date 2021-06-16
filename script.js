@@ -115,3 +115,16 @@ function diffOfSquares(n) {
 
 }
 diffOfSquares(10);
+
+//  How good are you really?
+
+function betterThanAverage(classPoints, yourPoints) {
+    let avg, sum = 0;
+    for (let i = 0; i < classPoints.length; i++) {
+        sum += classPoints[i];
+    }
+    avg = sum / classPoints.length;
+    return (avg < yourPoints) ? true : false;
+}
+
+betterThanAverage([2, 4, 5, 6], 5);
