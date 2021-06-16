@@ -128,3 +128,24 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 
 betterThanAverage([2, 4, 5, 6], 5);
+
+
+// Find the missing element between two arrays
+function findMissing(arr1, arr2) {
+    let res = 0;
+    arr1.sort(function(a, b) {
+        return a - b;
+    })
+    arr2.sort(function(a, b) {
+        return a - b;
+    })
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) {
+            res = arr1[i];
+            break;
+        }
+    }
+    return res;
+
+}
+findMissing(([1, 2, 3], [1, 3]), 2);
