@@ -114,7 +114,7 @@ function diffOfSquares(n) {
     return sum ** 2 - sq;
 
 }
-diffOfSquares(10);
+// diffOfSquares(10);
 
 //  How good are you really?
 
@@ -127,7 +127,7 @@ function betterThanAverage(classPoints, yourPoints) {
     return (avg < yourPoints) ? true : false;
 }
 
-betterThanAverage([2, 4, 5, 6], 5);
+// betterThanAverage([2, 4, 5, 6], 5);
 
 
 // Find the missing element between two arrays
@@ -148,4 +148,22 @@ function findMissing(arr1, arr2) {
     return res;
 
 }
-findMissing(([1, 2, 3], [1, 3]), 2);
+// findMissing(([1, 2, 3], [1, 3]), 2);
+
+// Counting Array Elements
+function count(array) {
+    let obj = {};
+    for (let i = 0; i < array.length; i++) {
+        let a = array[i]
+        if (obj[a] !== undefined) {
+            ++obj[a];
+        } else {
+            obj[a] = 1;
+        }
+        console.log(obj);
+    }
+    console.log(obj);
+    return obj;
+}
+
+count(['a', 'a', 'b', 'b', 'b']);
