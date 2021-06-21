@@ -183,3 +183,11 @@ var typeOfTriangle = function(a, b, c) {
         return 'Scalene';
     }
 }
+
+// Ones and Zeros
+// Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+const binaryArrayToNumber = arr => {
+    let str = arr.join('');
+    let res = parseInt(str, 2);
+    return res;
+};
